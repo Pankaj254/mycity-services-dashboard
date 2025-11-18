@@ -1,9 +1,10 @@
 import React from 'react'
+import SideBar from '../components/SideBar'
 
 const DashboardLayout = () => {
   return (
     <div>
-      Contains Sidebar and OUtlet
+      <SideBar/>
     </div>
   )
 }

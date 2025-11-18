@@ -1,16 +1,71 @@
-# React + Vite
+# 🏙️ MyCity Services Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive civic-tech dashboard built using **React**, **React Router**, and **Tailwind CSS**.  
+The platform allows users to log in and access digital utility services like **Electricity**, **Water**, **Waste Management**, and **Reports** through a clean and intuitive interface.
 
-Currently, two official plugins are available:
+This project is designed as a full front-end admin portal with nested routing, service dashboards, forms, and a reports summary section.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🔐 Authentication
+- Simple login screen  
+- Redirects authenticated users to the main dashboard layout  
+- Future-ready for API-based authentication  
 
-## Expanding the ESLint configuration
+### 🧭 Dashboard Layout (Post-Login)
+- Fixed **Navbar** with theme toggle + profile icon  
+- Collapsible **Sidebar** with active route indicators  
+- Responsive layout (mobile/tablet/desktop)  
+- Uses React Router `<Outlet />` for nested routing
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### ⚡ Utility Services Modules
+Each service has **two sections**:
+- **Existing** – shows current dashboard data (cards, charts, summaries)
+- **New** – lets the user choose:
+  - New Connection
+  - Service Modification / Upgrade
+  - New Complaint / Report
+
+### 📊 Reports Module
+- Summary cards (Total, Approved, Pending, Rejected)
+- Filter toolbar (status, service type)
+- Data table of past applications/complaints
+- Optional charts (Recharts)
+
+---
+
+## 🗂️ Folder Structure
+
+src/
+├── components/
+│ ├── Navbar.jsx
+│ └── Sidebar.jsx
+│
+├── layouts/
+│ └── DashboardLayout.jsx
+│
+├── pages/
+│ ├── Login/
+│ │ └── Login.jsx
+│ │
+│ └── Dashboard/
+│ ├── Dashboard.jsx
+│ ├── Electricity/
+│ │ ├── Existing.jsx
+│ │ └── New.jsx
+│ ├── Water/
+│ │ ├── Existing.jsx
+│ │ └── New.jsx
+│ ├── Waste/
+│ │ ├── Existing.jsx
+│ │ └── New.jsx
+│ ├── Reports/
+│ │ ├── Existing.jsx
+│ │ └── New.jsx
+│ └── NotFound.jsx
+│
+└── routes/
+└── AppRouter.jsx
+

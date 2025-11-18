@@ -1,11 +1,14 @@
 import { useState } from 'react'
 import './App.css'
+import Login from './pages/Login/Login'
+import DashboardLayout from './layouts/DashboardLayout'
 
 function App() {
 
   return (
     <>
-    <div className='bg-red-500'>Hello World</div>
+      {/* <Login/> */}
+      <DashboardLayout/>
     </>
   )
 }
