@@ -38,34 +38,35 @@ Each service has **two sections**:
 
 ## 🗂️ Folder Structure
 
+```
 src/
 ├── components/
-│ ├── Navbar.jsx
-│ └── Sidebar.jsx
+│   ├── Navbar.jsx
+│   └── Sidebar.jsx
 │
 ├── layouts/
-│ └── DashboardLayout.jsx
+│   └── DashboardLayout.jsx
 │
 ├── pages/
-│ ├── Login/
-│ │ └── Login.jsx
-│ │
-│ └── Dashboard/
-│ ├── Dashboard.jsx
-│ ├── Electricity/
-│ │ ├── Existing.jsx
-│ │ └── New.jsx
-│ ├── Water/
-│ │ ├── Existing.jsx
-│ │ └── New.jsx
-│ ├── Waste/
-│ │ ├── Existing.jsx
-│ │ └── New.jsx
-│ ├── Reports/
-│ │ ├── Existing.jsx
-│ │ └── New.jsx
-│ └── NotFound.jsx
+│   ├── Login/
+│   │   └── Login.jsx
+│   │
+│   └── Dashboard/
+│       ├── Dashboard.jsx
+│       ├── Electricity/
+│       │   ├── Existing.jsx
+│       │   └── New.jsx
+│       ├── Water/
+│       │   ├── Existing.jsx
+│       │   └── New.jsx
+│       ├── Waste/
+│       │   ├── Existing.jsx
+│       │   └── New.jsx
+│       ├── Reports/
+│       │   ├── Existing.jsx
+│       │   └── New.jsx
+│       └── NotFound.jsx
 │
 └── routes/
-└── AppRouter.jsx
-
+    └── AppRouter.jsx
+```
