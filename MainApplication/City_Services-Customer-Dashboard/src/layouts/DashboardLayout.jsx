@@ -1,10 +1,12 @@
 import React from 'react'
 import SideBar from '../components/SideBar'
+import Dashboard from '../pages/Dashboard/Dashboard'
 
 const DashboardLayout = () => {
   return (
-    <div>
+    <div className='h-screen flex'>
       <SideBar/>
+      <Dashboard/>
     </div>
   )
 }

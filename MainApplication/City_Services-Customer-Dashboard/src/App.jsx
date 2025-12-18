@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Login from './pages/Login/Login'
 import DashboardLayout from './layouts/DashboardLayout'
+import AppRouter from './routes/AppRouter'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <>
       {/* <Login/> */}
       <DashboardLayout/>
+      {/* <AppRouter/> */}
     </>
   )
 }

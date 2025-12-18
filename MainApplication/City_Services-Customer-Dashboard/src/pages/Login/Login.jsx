@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const Login = () => {
-  localStorage.setItem("username", "Pankaj");
+  localStorage.setItem("username", "UserRandom");
   localStorage.setItem("password", "12345");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
